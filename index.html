@@ -1,0 +1,335 @@
+<!doctype html>
+<html>
+ <head>
+ <title>WOWSlider</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="WOWSlider" />
+	
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="../../app4/engine1/style.css" />
+	<script type="text/javascript" src="../../app4/engine1/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section -->
+  <meta charset="utf-8" />
+  <title>Contaminacion Ambiental</title>
+  
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="../../../app4/css/tema1.min.css" />
+  <link rel="stylesheet" href="../../../app4/css/jquery.mobile.icons-1.4.5.min.css" />
+  <link rel="stylesheet" href="../../../app4/css/jquery.mobile.structure-1.4.5.min.css" />
+  
+  <!--grupo JavaScript-->
+  <script src="../../../app4/js/jquery-1.11.2.min.js"></script>
+  <script src="../../../app4/js/jquery.mobile-1.4.5.min.js"></script>
+  <!--  <script src="js/acciones.js"></script>  -->
+  <script src="../../../app4/phonegap.js"></script>
+  
+  <style>
+   #tipos {
+	   list-style:none;}
+	ul {
+		font-size:1.3em;}
+	ul li {
+		font-size: 1.5em;}
+	ol li {
+		font-size: 1.5em;}
+	#tipos img {
+		display:inline-block;}
+	p {
+		font-size: 1.3em;}
+  </style>
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+  
+  <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="../../../app4/engine1/style.css" />
+<script type="text/javascript" src="../../../app4/engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="../../../app4/engine2/style.css" />
+<script type="text/javascript" src="../../../app4/engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+  
+ </head>
+ 
+ <body onLoad="MM_preloadImages('imagenes/basura.jpg','imagenes/aguas negras.jpg','imagenes/suelo1.jpg','imagenes/ozono.jpg','imagenes/organica.jpg','imagenes/inorganic.jpg','imagenes/peligro.jpg','imagenes/residuo.jpg','imagenes/mundo2.jpg')">
+ 
+  <div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Contaminacion ambiental</h1>
+   </div>
+   
+  <div>
+   <ul data-role="listview" data-theme="c" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Definicion</h2>
+     <p>¿Que es la contaminacion?</p>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Tipos</h2>
+     <p>Se muestran los tipos de contaminacion existentes</p>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Consecuencias</h2>
+     <p>Demostracion de las consecuencias de la contaminacion</p>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Reciclaje</h2>
+     <p>¿Que es? y clasificacion del reciclaje</p>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Medidas para combatirla</h2>
+     <p>Medidas para combatirla, aplicables a mi comunidad</p>
+     </a>
+    </li>
+   </ul>
+   </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="images/icono.png" width="46" height="46">
+    </div>
+    <div>
+     <h4>Aplicacion 4</h4>
+     <h4>Luz Maria Cruz de la Rosa</h4>
+    </div>
+   </div>
+  </div>
+  <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Definicion</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+     <p>La contaminación es la introducción de algún tipo de sustancia o energía que atentará contra el normal funcionamiento y equilibrio que ostentaba el medio inicialmente, provocando además un daño casi irreversible el medio ambiente (que tantos los seres humanos como los animales y plantas utilizamos para vivir y desarrollarnos) se denomina contaminación ambiental, siendo la presencia en el ambiente de algún tipo de agente físico, químico o biológico o la combinación de alguno de estos, la que producirá este desequilibrio del que hablábamos más arriba y que resulta ser ampliamente nocivo para la salud, seguridad o bienestar de los habitantes de cualquier nación y por supuesto lo es también para el resto de los seres vivos, como las plantas y animales.
+La contaminación puede darse exclusivamente en el suelo, el aire o el agua.</p>
+    </div>
+    
+    <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+ <h1>Imagenes</h1>
+ <div>
+ <br>
+ </div>
+ <div>
+   <h5> <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('contaminacion','','imagenes/basura.jpg',1)"><img src="imagenes/tierra.jpeg" width="247" height="204" id="contaminacion"></a>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed"> <height="51"> </h5>
+ </div>
+ </div>
+ </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="images/icono.png" width="46" height="46">
+    </div>
+     <h4>Aplicacion 4,LMCR</h4>
+   </div>
+<div data-role="collapsible" data-content-theme="false">
+  
+</div>
+   </div>
+    
+   </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="images/icono.png" width="46" height="46">
+    </div>
+     <h4>Aplicacion cuatro, LMCR</h4>
+   </div>
+  
+  
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Tipos de Contaminacion</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+     <ul id="tipos">
+      <li>Agua</li>
+      <p>La contaminación del agua es cualquier cambio químico, físico o biológico en la calidad del agua que tiene un efecto dañino en cualquier cosa viva que consuma ese agua. Cuando los seres humanos beben el agua contaminada tienen a menudo problemas de salud. La contaminación del agua puede también puede hacer a esta  inadecuada para el uso deseado.</p>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('agua','','imagenes/aguas negras.jpg',1)"><img src="imagenes/agua.jpg" width="600" height="399" id="agua"></a>
+<li>Suelo</li>
+<p>Esta alteración de la calidad de la tierra puede obedecer a muy diferentes causas, y del mismo modo sus consecuencias provocan serios problemas de salubridad que afectan gravemente a la flora, fauna o a la salud humana a lo largo del tiempo.El almacenamiento incorrecto de residuos, su vertido intencionado o accidental, la acumulación de basuras en su superficie o el enterramiento de los mismos, así como fugas en tanques superficiales o subterráneos por averías o infraestructuras deficientes son algunas de sus principales causas.</p>     
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('suelo','','imagenes/suelo1.jpg',1)"><img src="imagenes/suelo.jpg" width="726" height="480" id="suelo"></a>
+<li>Aire</li>
+      <p>La contaminación atmosférica es la presencia en la atmósfera de determinadas sustancias perjudiciales para el ser humano y el resto de seres vivos. Es un tipo de contaminación ambiental que afecta el aire que respiramos y dado el gran desarrollo de las industrias actuales cada vez se la hace más difícil frenarla.</p>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('aire','','imagenes/ozono.jpg',1)"><img src="imagenes/1.jpg" width="960" height="723" id="aire"></a>
+     </ul>
+    </div>
+   </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="images/icono.png" width="46" height="46">
+    </div>
+     <h4>Aplicacion 4,LMCR</h4>
+   </div>
+  </div>
+  
+  <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Consecuencias</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+    <ul align="left">
+     <li>Problemas para la salud</li>
+     <img src="imagenes/concecuencia1.jpg" width="60%" height="60%" alt="salud">
+<li>Pérdida de la flora y fauna.</li>
+<img src="imagenes/leon.jpg" width="60%" height="60%" alt="global">
+<li>Calentamiento global</li>
+ <img src="imagenes/calentamiento.jpg" width="60%" height="60%" alt="calentamiento">
+<li>Especies en peligro de extincion</li>
+     <img src="imagenes/oso.jpg" width="60%" height="60%" alt="oso">
+<li>Degradacion del Ambiente</li>
+  <img src="imagenes/degradacion.jpg" width="60%" height="60%" alt="degradacion">
+<li>Indice Metropolitano de Calidad del Aire</li>
+    <img src="imagenes/temperatura.png" width="60%" height="60%" alt="temperatura">
+    </ul>
+    </div>
+   </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="images/icono.png" width="46" height="46">
+    </div>
+     <h4>Aplicacion 4, LMCR</h4>
+   </div>
+  </div>
+  
+  <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Reciclaje</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+     <h2>¿Que es?</h2>
+     <p> El reciclaje consiste en obtener una nueva materia prima o producto, mediante un proceso fisicoquímico o mecánico, a partir de productos y materiales ya en desuso o utilizados. De esta forma, conseguimos alargar el ciclo de vida de un producto, ahorrando materiales y beneficiando al medio ambiente al generar menos residuos.El reciclaje surje no sólo para eliminar residuos, sino para hacer frente al agotamiento de los recursos naturales del planeta.
+El reciclaje es un componente clave en la reducción de desechos contemporáneos y es el segundo componente de las 3R (Reducir, Reciclar y Reutilizar)..</p>
+      <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+ <h1>imagenes</h1>
+ <div>
+ <br>
+ </div>
+ <div>
+   <h5>  
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('reciclaje','','imagenes/mundo2.jpg',1)"><img src="imagenes/mundo.jpg" width="400" height="276" id="reciclaje"></a> </h5>
+  </div>
+  </div>
+     </div>
+    <div>
+     <h2>Clasificacion</h2>
+     <ul align="left">
+      <li>Reciclaje Orgánicos:</li>
+      <p>Todo desecho de origen biológico que alguna vez estuvo vivo o fue parte de un ser vivo.</p>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('organica','','imagenes/organica.jpg',1)"><img src="imagenes/basura organica.JPG" width="60%" height="60%" id="organica"></a>
+<li>Reciclaje Inorgánicos:</li>
+      <p>Todo desecho que no es de origen biológico.</p>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('inorganico','','imagenes/inorganic.jpg',1)"><img src="imagenes/inorganico.png" width="60%" height="60%" id="inorganico"></a>
+<li>Reciclaje peligrosos</li>
+      <p>Todo desecho, ya sea de origen biológico o no, que constituye un peligro potencial y por lo cual debe ser tratado de forma especial, por ejemplo: material médico infeccioso, residuo radiactivo, ácidos y sustancias químicas corrosivas, etc.</p>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('peligro','','imagenes/peligro.jpg',1)"><img src="imagenes/peligrososi.jpg" width="60%" height="60%" id="peligro"></a>
+<li>Residuo industrial</li>
+      <p>Su origen es producto de la manufactura o proceso de transformación de la materia prima.</p>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('residuo','','imagenes/residuo.jpg',1)"><img src="imagenes/Residuos-industriales.jpg" width="60%" height="60%" id="residuo"></a>
+     </ul>
+     <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="images/icono.png" width="46" height="46">
+    </div>
+     <h4>Aplicacion 4,LMCR</h4>
+   </div>
+
+     </div>
+    </div>
+    
+   </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="images/icono.png" width="46" height="46">
+    </div>
+     <h4>Aplicacion 4, LMCR</h4>
+   </div>
+  </div>
+  
+  
+  <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Medidas</h1>
+   </div>
+ <div data-role="content" align="center">
+    <div>
+     <ol align="left">
+      <li>Separar la basura</li>
+      <li>No quemar ni talar plantas.</li>
+      <li>Limpiar los rios</li>
+      <li>No arrojes basura en la calley rios,envuélvela o tápala bien y tirala en el un bote de basura o en la casa</li>
+     </ol>
+     <div>
+     <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="images/icono.png" width="46" height="46">
+    </div>
+     <h4>Aplicacion 4,LMCR</h4>
+   </div>
+      <!--otro visor-->
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/reciclar.jpg" alt="reciclar" title="reciclar" id="wows1_0"/></li>
+		<li><img src="data1/images/tala.jpg" alt="tala" title="tala" id="wows1_1"/></li>
+		<li><img src="data1/images/contaminado.jpg" alt="contaminado" title="contaminado" id="wows1_2"/></li>
+		<li><img src="data1/images/calle.jpg" alt="calle" title="calle" id="wows1_3"/></li>
+		<li><img src="data1/images/colillas.jpg" alt="colillas" title="colillas" id="wows1_4"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/basura_en_la_calle.jpg" alt="bootstrap carousel" title="basura en la calle" id="wows1_5"/></a></li>
+		<li><img src="data1/images/mundo.jpg" alt="mundo" title="mundo" id="wows1_6"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="reciclar"><span><img src="data1/tooltips/reciclar.jpg" alt="reciclar"/>1</span></a>
+		<a href="#" title="tala"><span><img src="data1/tooltips/tala.jpg" alt="tala"/>2</span></a>
+		<a href="#" title="contaminado"><span><img src="data1/tooltips/contaminado.jpg" alt="contaminado"/>3</span></a>
+		<a href="#" title="calle"><span><img src="data1/tooltips/calle.jpg" alt="calle"/>4</span></a>
+		<a href="#" title="colillas"><span><img src="data1/tooltips/colillas.jpg" alt="colillas"/>5</span></a>
+		<a href="#" title="basura en la calle"><span><img src="data1/tooltips/basura_en_la_calle.jpg" alt="basura en la calle"/>6</span></a>
+		<a href="#" title="mundo"><span><img src="data1/tooltips/mundo.jpg" alt="mundo"/>7</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">http://wowslider.net/</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+ </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="images/icono.png" width="46" height="46">
+    </div>
+     <h4>Aplicacion 4,LMCR</h4>
+   </div>
+  </div>
+</html>
